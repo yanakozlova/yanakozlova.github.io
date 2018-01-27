@@ -1,0 +1,33 @@
+
+.courses-requirements-module {
+  background-image: @courses-img-bg;
+  background-size: cover;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: @bg-color;
+  h2 {
+    color: @h-lite-color;
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: 400;
+  }
+  .courses-requirements {
+    h4 {
+      text-align: center;
+      color: @h-lite-color;
+    }
+    .flex-row-mixin,
+    .courses-requirements_description {
+      background-color: @details-bg-color;
+      padding: 36px 48px;
+      margin: 10px;
+      max-width: 500px;
+      min-width: 300px;
+      .courses-requirements-list {
+        color: @h-lite-color;
+        text-align: left;
+      }
+    }
+  }
+}

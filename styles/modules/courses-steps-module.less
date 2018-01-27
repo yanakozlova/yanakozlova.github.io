@@ -1,0 +1,54 @@
+.courses-steps-module {
+  position: relative;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  .flex-col-mixin;
+  h2 {
+    color: @h-dark-color;
+  }
+  .steps-module {
+    max-width: 700px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 5px;
+    }
+    .graduation-details-header {
+      font-weight: 400;
+      color: @h-dark-color;
+      text-align: center;
+    }
+    .courses-details-list {
+      p {
+        margin: 26px 0;
+        text-transform: none;
+        font-size: 15px;
+        color: @sub-text-color;
+      }
+    }
+    .courses-steps-list {
+      list-style-type: square;
+
+      color: @sub-text-color;
+
+      text-align: center;
+      li {
+        margin-top: 25px;
+
+      }
+    }
+  }
+  .courses-steps-img-right {
+    position: absolute;
+    top: 4%;
+    right: 0;
+    width: 11%;
+  }
+  .courses-steps-img-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13%;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../themes.less";
+
+.faq-module {
+  background-color: @bg-color;
+  text-align: center;
+  position: relative;
+  padding: 80px 0;
+  .flex-col-mixin;
+  h2 {
+    color: @h-dark-color;
+  }
+  h3 {
+    color: @h-dark-color;
+    font-size: 15px;
+  }
+  .faq-questions-list {
+    max-width: 700px;
+    details {
+      margin: 32px 0;
+      cursor: pointer;
+      color: @faq-questions-list-color;
+      text-align: left;
+      summary {
+        margin: 15px 0;
+        color: @h-dark-color;
+        font-size: 14px;
+      }
+    }
+  }
+  .faq-img-polygon-right {
+    width: 13%;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+
+  }
+  .faq-img-polygon-left {
+    width: 13%;
+    position: absolute;
+    top: 8%;
+    left: 0;
+  }
+}

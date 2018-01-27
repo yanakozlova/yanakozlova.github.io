@@ -1,0 +1,51 @@
+/* Маленькие  экраны(по умолчанию) */
+html {
+  font-size: 100%;
+}
+@media (min-width: 360px) {
+  .courses-module{
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px 48px;
+    margin: 10px;
+  }
+  .courses-list {
+    flex-direction: column;
+  }
+  .courses-requirements_description{
+    background-color: @details-bg-color;
+    color: @h-lite-color;
+    margin: 10px;
+  }
+}
+/* Средние экраны (640px) */
+@media (min-width: 40rem) {
+  html {
+    font-size: 112%;
+  }
+}
+
+/* Большие экраны (1024px) */
+@media (min-width: 64rem) {
+  html {
+    font-size: 120%;
+  }
+  .courses-module{
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+  }
+  .courses-list {
+    flex-direction: row;
+  }
+  .courses-requirements{
+    display: flex;
+    flex-direction: row;
+  }
+  .courses-requirements_description{
+    padding: 36px 48px;
+    margin: 10px;
+    max-width: 500px;
+    min-width: 300px;
+  }
+}
