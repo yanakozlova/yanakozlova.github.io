@@ -1,5 +1,0 @@
-CACHE MANIFEST
-index.html
-stylesheet.css
-images/logo.png
-less.min.js
