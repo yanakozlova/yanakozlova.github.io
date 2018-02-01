@@ -5,10 +5,18 @@
     <link rel="stylesheet/less" type="text/css" href="styles.less"/>
 </head>
 <body>
+<script>
+    [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function() {
+            img.removeAttribute('data-src');
+        };
+    });
+</script>
 <header class="header">
 
     <nav class="nav-container">
-        <img class="logo" alt="Brand" src="images/logo-header.png">
+        <img class="logo" alt="Brand" data-src="images/logo-header.png">
         <ul class="navbar">
             <li class="navbar-link"><a href="#home">University Home</a></li>
             <li class="navbar-link"><a href="#about">About</a></li>
@@ -22,7 +30,7 @@
 
 <article class="main-module">
     <section class="main-section">
-        <img class="spdu-logo" src="images/spdu_logo.png">
+        <img class="spdu-logo" data-src="images/spdu_logo.png">
         <h3 class="uppercase">Spd-University — IT-освіта Черкас </h3>
         <p>SPD-University - це проект для тих, хто хоче прокачати
             свої
@@ -55,22 +63,22 @@
             практичним досвідом. Курси безкоштовні, проте вимагають від абітурієнтів теоретичної бази.</p>
     </section>
     <section class="courses-list">
-        <img src="images/about_logo.png">
+        <img data-src="images/about_logo.png">
         <section class="courses-links">
             <h4 class="uppercase ">На данний момент у нас відкриті такі курси:</h4>
             <ul>
                 <li>
                     <hr>
-                    <img src="images/java.png" class="about-block_courses-icon"><a class="uppercase" href="#courses">Java
+                    <img data-src="images/java.png" class="about-block_courses-icon"><a class="uppercase" href="#courses">Java
                     for
                     Web</a></li>
                 <li>
                     <hr>
-                    <img src="images/html5.png" class="about-block_courses-icon"><a class="uppercase" href="#courses">Front-End</a>
+                    <img data-src="images/html5.png" class="about-block_courses-icon"><a class="uppercase" href="#courses">Front-End</a>
                 </li>
                 <li>
                     <hr>
-                    <img src="images/qa.png" class="about-block_courses-icon"><a class="uppercase" href="#courses">Quality
+                    <img data-src="images/qa.png" class="about-block_courses-icon"><a class="uppercase" href="#courses">Quality
                     Assurance</a>
                 </li>
             </ul>
@@ -117,7 +125,7 @@
             <li><span>Пройти тестування з напрямку, який ви обрали під час реєстрації</span></li>
             <li><span>У разі успішного складання тесту - пройти співбесіду</span></li>
         </ul>
-        <img src="images/Polygon1.png" class="courses-steps-img-right">
+        <img data-src="images/Polygon1.png" class="courses-steps-img-right">
         <h3 class="graduation-details-header">Деталі про вступ до SPD-University</h3>
         <section class="courses-details-list">
             <p>Для того, щоб потрапити до SPD-University потрібно:</p>
@@ -130,7 +138,7 @@
             <p>Третій і останній крок - співбесіда. У вас буде можливість продемонструвати технічні знання та
                 комунікативні навички.</p>
         </section>
-        <img src="images/Polygon.png" class="courses-steps-img-left">
+        <img data-src="images/Polygon.png" class="courses-steps-img-left">
     </section>
 </article>
 
@@ -266,21 +274,21 @@
         </details>
     </section>
 
-    <img src="images/Polygon.png" class="faq-img-polygon-left">
-    <img src="images/Polygon1.png" class="faq-img-polygon-right">
+    <img data-src="images/Polygon.png" class="faq-img-polygon-left">
+    <img data-src="images/Polygon1.png" class="faq-img-polygon-right">
 </article>
 
 <article class="partners-module" id="partners">
     <h2 class="uppercase">Наші партнери</h2>
     <h3>Ми вдячні нашим партнерам за підтримку <br>проекту
         SPD-University</h3>
-    <img src="images/Polygon1.png" class="partners-module-img-right">
-     <img src="images/Polygon.png" class="partners-module-img-left">
+    <img data-src="images/Polygon1.png" class="partners-module-img-right">
+     <img data-src="images/Polygon.png" class="partners-module-img-left">
 </article>
 
 <footer>
     <section class="footer-widget">
-        <img src="images/logo-footer.png">
+        <img data-src="images/logo-footer.png">
         <p>СПД-університет - найкращий спосіб прокачати свої знання у сфері ІТ</p>
     </section>
     <section class="footer-widget">
