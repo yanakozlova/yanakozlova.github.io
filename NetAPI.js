@@ -1,7 +1,7 @@
 let connection, connectionSpeed, htmlNode, htmlClass;
-connection = window.navigator.connection || {'type':'0'};
+connection = window.navigator.connection || {'type': '0'};
 
-switch(connection.type) {
+switch (connection.type) {
     case connection.CELL_3G:
         // 3G
         connectionSpeed = 'medium';
@@ -15,11 +15,8 @@ switch(connection.type) {
         connectionSpeed = 'high';
 }
 
-// set the connection speed on the html element, i.e. <html class="lowbandwidth">
-htmlNode = document.body.parentNode;
-htmlClass = htmlNode.getAttribute('class') || '';
-htmlNode.setAttribute('class', htmlClass + ' ' + connectionSpeed);
-console.log(connectionSpeed);
-var images = document.getElementsByTagName("img");
-for (var i = 2; i < images.length; i++)
-    images[i].src = "";
+if (connectionSpeed = 'low') {
+    const images = document.getElementsByTagName("img");
+    for (let i = 2; i < images.length; i++)
+        images[i].src = "";
+}
