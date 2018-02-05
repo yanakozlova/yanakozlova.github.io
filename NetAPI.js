@@ -24,7 +24,7 @@ if (connectionSpeed !== 'low') {
             const im_place = document.getElementsByClassName(item);
             console.log(im_place.item(1));
             if (im_place.length > 1) {
-                for (let i = 0; i < im_place.length) {
+                for (let i = 0; i < im_place.length; i++) {
                     im_place[i].appendChild(img)
                 }
             } else {
