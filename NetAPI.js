@@ -25,8 +25,10 @@ if (connectionSpeed !== 'low') {
             console.log(im_place);
             if (im_place.length > 1) {
                 for (let i = 0; i < im_place.length; i++) {
-                    im_place[0].appendChild(img);
-                    console.log(im_place[0])
+                    let img = document.createElement('img');
+                    img.setAttribute('src', 'images/' + item);
+                    im_place[i].appendChild(img);
+                    console.log(im_place[i])
                 }
             } else {
                 im_place[0].appendChild(img)
