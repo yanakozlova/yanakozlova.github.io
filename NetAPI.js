@@ -14,9 +14,8 @@ switch (connection.type) {
         // WIFI, ETHERNET, UNKNOWN
         connectionSpeed = 'high';
 }
-
-if (connectionSpeed = 'low') {
-    const images = document.getElementsByTagName("img");
-    for (let i = 2; i < images.length; i++)
-        images[i].src = "";
-};
+console.log(connectionSpeed);
+if (connectionSpeed !== 'low') {
+    const img = document.createElement("img").setAttribute('src','images/java.png');
+    document.getElementsByClassName("img_java").appendChild(img);
+}
