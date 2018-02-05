@@ -15,7 +15,16 @@ switch (connection.type) {
         connectionSpeed = 'high';
 }
 console.log(connectionSpeed);
-if (connectionSpeed !== 'low') {
-    const img = document.createElement("img").setAttribute('src','images/java.png');
-    document.getElementsByClassName("img_java").appendChild(img);
+const imgs = ['java.png', 'html5.png', 'qa.png', 'about_logo.png', 'Polygon.png', 'Polygon1.png' ];
+
+if (connectionSpeed === 'high') {
+    imgs.forEach((item) => {
+        let img = document.createElement('img');
+        img.setAttribute('src','images/' + item);
+        const im_place = document.getElementsByClassName(item);
+        console.log(im_place);
+        im_place[0].appendChild(img);
+    });
+
+
 }
