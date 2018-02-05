@@ -15,7 +15,7 @@ switch (connection.type) {
         connectionSpeed = 'high';
 }
 console.log(connectionSpeed);
-const imgs = ['java.png', 'html5.png', 'qa.png', 'about_logo.png', 'Polygon.png', 'Polygon1.png'];
+const imgs = ['spdu_logo.png', 'java.png', 'html5.png', 'qa.png', 'about_logo.png', 'Polygon.png', 'Polygon1.png'];
 
 if (connectionSpeed !== 'low') {
     imgs.forEach((item) => {
