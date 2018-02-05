@@ -17,13 +17,13 @@ switch (connection.type) {
 console.log(connectionSpeed);
 const imgs = ['java.png', 'html5.png', 'qa.png', 'about_logo.png', 'Polygon.png', 'Polygon1.png' ];
 
-if (connectionSpeed === 'high') {
+if (connectionSpeed === 'high' || connectionSpeed === 'medium') {
     imgs.forEach((item) => {
         let img = document.createElement('img');
         img.setAttribute('src','images/' + item);
         const im_place = document.getElementsByClassName(item);
         console.log(im_place);
-        im_place[0].appendChild(img);
+        im_place.forEach( (item)=> {item.appendChild(img)});
     });
 
 
