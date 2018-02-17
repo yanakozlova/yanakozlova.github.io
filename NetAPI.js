@@ -15,18 +15,18 @@ switch (connection.type) {
         connectionSpeed = 'high';
 }
 console.log(connectionSpeed);
-const imgs = ['spdu_logo.png', 'java.png', 'html5.png', 'qa.png', 'about_logo.png', 'Polygon.png', 'Polygon1.png'];
+const imgs = ['spdu_logo', 'java', 'html5', 'qa', 'about_logo', 'Polygon', 'Polygon1'];
 
 if (connectionSpeed === 'high') {
     imgs.forEach((item) => {
             let img = document.createElement('img');
-            img.setAttribute('src', 'images/' + item);
+            img.setAttribute('src', 'images/' + item+ '.png');
             const im_place = document.getElementsByClassName(item);
             console.log(im_place);
             if (im_place.length > 1) {
                 for (let i = 0; i < im_place.length; i++) {
                     let img = document.createElement('img');
-                    img.setAttribute('src', 'images/' + item);
+                    img.setAttribute('src', 'images/' + item +'.png');
                     im_place[i].appendChild(img);
                     console.log(im_place[i])
                 }
